@@ -1,11 +1,28 @@
 import React from 'react';
-
-
-function App() {
+import { BrowserRouter, Route } from 'react-router-dom';
+import Eat from './components/Eat';
+import Drink from './components/Drink';
+import Home from './components/Home';
+import Visit from "./components/Visit";
+import Nav from './components/BottomNav';
+const App = () => {
+  
+  
+  
   return (
-    <div className="App">
-     <h4> test mobile </h4>
-    </div>
+   <div>
+   
+     <BrowserRouter>
+     <Nav/>
+     <div>
+     <Route path="/" exact component={Home}/>
+     <Route path="/eat"  component={Eat}/>
+     <Route path="/drink" exact component={Drink}/>
+     <Route path="/visit" component={Visit}/>
+   
+     </div>
+     </BrowserRouter>
+   </div>
   );
 }
 
