@@ -5,6 +5,8 @@ import Drink from './components/Drink';
 import Home from './components/Home';
 import Visit from "./components/Visit";
 import Nav from './components/BottomNav';
+import Main from './components/Main';
+import "./style.css";
 const App = () => {
   
   
@@ -13,9 +15,9 @@ const App = () => {
    <div>
    
      <BrowserRouter>
-     <Nav/>
+     
      <div>
-     <Route path="/" exact component={Home}/>
+     <Route path="/" exact component={Main}/>
      <Route path="/eat"  component={Eat}/>
      <Route path="/drink" exact component={Drink}/>
      <Route path="/visit" component={Visit}/>

@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "./style.css"
 const Drink = () => {
 return(
-    <div> drink PAGE</div>
+    <div id="bottomDiv"> drink PAGE</div>
 )
 
 }
