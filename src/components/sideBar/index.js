@@ -2,12 +2,10 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
     Button,
-    Checkbox,
     Grid,
     Header,
     Icon,
     Image,
-    Menu,
     Segment,
     Sidebar,
 } from 'semantic-ui-react'
@@ -28,10 +26,10 @@ const HorizontalSidebar = ({ animation, direction, visible }) => (
             <Grid.Row columns={2}>
                 <Grid.Column>
                     <Icon name='phone' circular />
-                    
+
                 </Grid.Column>
                 <Grid.Column>
-                    
+
                     <Header as='h3'>New Content Awaits</Header>
                 </Grid.Column>
             </Grid.Row>

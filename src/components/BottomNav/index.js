@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Menu , Icon} from 'semantic-ui-react'
+import { Menu} from 'semantic-ui-react'
 import './navStyle.css'
 export default class Nav extends Component {
   state = { activeItem: 'home' }
