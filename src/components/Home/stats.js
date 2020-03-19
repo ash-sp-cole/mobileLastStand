@@ -8,6 +8,7 @@ const Stats = () =>{
         <div>
              
 <Statistic.Group horizontal>
+  
     <Statistic>
       <Statistic.Value>427</Statistic.Value>
       <Statistic.Label>home craft beers</Statistic.Label>

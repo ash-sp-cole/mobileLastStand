@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Header, Grid, Icon, Image } from 'semantic-ui-react';
 import Stats from '../Home/stats';
+import SocialFeed from './facebookFeed';
+import LiveFeed from './liveFeed';
 
 
 const Social = () => (
@@ -8,18 +10,10 @@ const Social = () => (
     <Grid.Row>
       <Grid.Column>
        
-      <Header as='h2' icon textAlign='center'>
-          <Icon name='users' circular />
-          <Header.Content>Welcome</Header.Content>
-        </Header>
-        <Image
-          centered
-          size='large'
-          src='https://react.semantic-ui.com/images/wireframe/centered-paragraph.png'
-        />
+     <SocialFeed/>
       </Grid.Column>
       <Grid.Column>
-       <Stats/>
+       <LiveFeed/>
       </Grid.Column>
     
     </Grid.Row>

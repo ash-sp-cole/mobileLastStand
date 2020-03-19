@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Header, Grid, Icon, Image } from 'semantic-ui-react';
 import Stats from './stats';
 import logo from "../Home/logo.png";
-import {Animated} from "react-animated-css";
+
 const Welcome= () => (
   <Grid columns={2} divided>
     <Grid.Row>
@@ -19,7 +19,7 @@ const Welcome= () => (
         />
       </Grid.Column>
       <Grid.Column>
-      <Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}> <Stats/> </Animated>
+     <Stats/>
       </Grid.Column>
     
     </Grid.Row>
