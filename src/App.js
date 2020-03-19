@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Eat from './components/Eat';
-import Drink from './components/Drink';
-import Visit from "./components/Visit";
+
 import Main from './components/Main';
 import "./style.css";
 const App = () => {
@@ -16,9 +14,7 @@ const App = () => {
      
      <div>
      <Route path="/" exact component={Main}/>
-     <Route path="/eat"  component={Eat}/>
-     <Route path="/drink" exact component={Drink}/>
-     <Route path="/visit" component={Visit}/>
+ 
    
      </div>
      </BrowserRouter>

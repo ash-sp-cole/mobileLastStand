@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Header, Grid, Icon, Image } from 'semantic-ui-react';
+import Stats from "../Home/stats";
 
-const Eat= () => {
-return(
-    <div> eat PAGE</div>
+
+const Menu = () => (
+  <Grid columns={2} divided>
+    <Grid.Row>
+      <Grid.Column>
+       
+      <Header as='h2' icon textAlign='center'>
+          <Icon name='users' circular />
+          <Header.Content>Welcome</Header.Content>
+        </Header>
+        <Image
+          centered
+          size='large'
+          src='https://react.semantic-ui.com/images/wireframe/centered-paragraph.png'
+        />
+      </Grid.Column>
+      <Grid.Column>
+       <Stats/>
+      </Grid.Column>
+    
+    </Grid.Row>
+
+   </Grid>
 )
-
-}
-
-
-export default Eat;
+export default Menu;

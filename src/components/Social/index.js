@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import { Header, Grid, Icon, Image } from 'semantic-ui-react';
-import Stats from './stats';
-import logo from "../Home/logo.png";
-import {Animated} from "react-animated-css";
-const Welcome= () => (
+import Stats from '../Home/stats';
+
+
+const Social = () => (
   <Grid columns={2} divided>
     <Grid.Row>
       <Grid.Column>
        
       <Header as='h2' icon textAlign='center'>
-      
+          <Icon name='users' circular />
           <Header.Content>Welcome</Header.Content>
         </Header>
         <Image
           centered
           size='large'
-          src={logo}
+          src='https://react.semantic-ui.com/images/wireframe/centered-paragraph.png'
         />
       </Grid.Column>
       <Grid.Column>
-      <Animated animationIn="fadeInLeft" animationOut="zoomOutDown" animationInDuration={2500} animationOutDuration={1400} isVisible={true}> <Stats/> </Animated>
+       <Stats/>
       </Grid.Column>
     
     </Grid.Row>
 
    </Grid>
 )
-export default Welcome;
+export default Social;
