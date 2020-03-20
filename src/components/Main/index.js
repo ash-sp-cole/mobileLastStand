@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import Nav from '../BottomNav/index';
 // import SidebarExampleTransitions from '../sideBar';
-import { Grid, Menu } from 'semantic-ui-react';
+import { Grid, Menu,Container } from 'semantic-ui-react';
 import './main.css';
 
 import Stats from '../Home/stats';
 import Welcome from '../Home/welcome';
 import Visit from '../Visit';
 import Social from '../Social';
-
+import Top from '../Top';
 class Main extends Component {
 
 
@@ -17,13 +17,13 @@ class Main extends Component {
 
   renderMain() {
     if (this.state.activeItem === "Home") {
-      return <Welcome />
+      return <Welcome id="mainBanner"/>
     }
     else if (this.state.activeItem === "Menu") {
       return <Welcome />
     }
     else if (this.state.activeItem === "Visit") {
-      return <Visit />
+      return <Visit id="mainBanner"/>
     }
 
     else if (this.state.activeItem === "Social") {
@@ -39,15 +39,33 @@ class Main extends Component {
     console.log(this.state.activeItem, " render main ")
     return (
 
-      <Grid columns={3} stackable style={{ height: '100vh' }}>
+      <Grid columns={3} stackable >
 
-        <Grid.Row style={{ height: '70%' }} id="banner">
+{/* 
+         ========================= TOP ================================ */}
+
+        <Grid.Row style={{ height: '20%' }} >
+        <Grid.Column style={{ margin: 'auto' }}>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto'}}>
+            <Top/>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto'}}>
+          
+          </Grid.Column>
+        </Grid.Row>
+{/* 
+         ========================= MIDDLE BANNER ================================ */}
+
+        <Grid.Row style={{ height: '50vh' }} id="banner">
 
         </Grid.Row>
 
+{/* 
+         ========================= MENU ================================ */}
 
-        <Grid.Row id="middle" style={{ height:'30%' }}>
-          <Grid.Column style={{ margin: 'auto', width:'40vw' }}>
+  <Grid.Row id="middle"  style={{margin:'auto', height: '20%' }}>
+          <Grid.Column style={{ margin: 'auto', width: '20vw' }}>
             <Menu pointing secondary vertical size='massive' >
               <Menu.Item
 
@@ -74,26 +92,36 @@ class Main extends Component {
 
             </Menu>
           </Grid.Column>
-          <Grid.Column style={{ margin: 'auto', width:'60vw' }}>
+          <Grid.Column id="mainBanner">
+            <Container textAlign='center'>
             {this.renderMain()}
+            </Container>
           </Grid.Column>
 
+        </Grid.Row> 
+
+{/* 
+         ========================= BOTTOM EXTRA BANNER ================================ */}
+
+
+         <Grid.Row style={{ height: '50vh' }} id="banner2" >
+  
+      </Grid.Row> 
+
+
+{/* 
+         ========================= FOOTER ================================ */}
+
+
+      <Grid.Row style={{ height: '20%' }} >
+        <Grid.Column style={{ margin: 'auto' }}>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto'}}>
+            <Top/>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto' }}>
+          </Grid.Column>
         </Grid.Row>
-
-
-        {/* <Grid.Row style={{height: '10%'}} >
-        <Grid.Column>
-         
-        </Grid.Column>
-        <Grid.Column>
-
-        </Grid.Column>
-        <Grid.Column>
-
-          <SidebarExampleTransitions />
-        </Grid.Column>
-      </Grid.Row> */}
-
       </Grid>
 
     )

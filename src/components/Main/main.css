@@ -10,3 +10,28 @@
 #leftCol{
   background-color: honeydew !important;
 }
+
+Image{
+   
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#banner2{
+   
+  background: url(../Main/deckTables.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mainBanner{
+  width: 80vw;
+  height: 50vh;
+  padding: 5%;
+
+}
