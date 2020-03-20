@@ -44,7 +44,7 @@ class Main extends Component {
 {/* 
          ========================= TOP ================================ */}
 
-        <Grid.Row style={{ height: '20%' }} >
+        <Grid.Row style={{ backgroundColor:'saddlebrown', height: '20%' }} >
         <Grid.Column style={{ margin: 'auto' }}>
           </Grid.Column>
           <Grid.Column style={{ margin: 'auto'}}>
@@ -64,7 +64,7 @@ class Main extends Component {
 {/* 
          ========================= MENU ================================ */}
 
-  <Grid.Row id="middle"  style={{margin:'auto', height: '20%' }}>
+  <Grid.Row id="middle"  style={{margin:'auto',backgroundColor:'wheat',color:'white', height: '20%' }}>
           <Grid.Column style={{ margin: 'auto', width: '20vw' }}>
             <Menu pointing secondary vertical size='massive' >
               <Menu.Item

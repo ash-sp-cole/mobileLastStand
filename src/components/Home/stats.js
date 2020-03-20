@@ -7,18 +7,18 @@ const Stats = () =>{
     return(
         <div>
              
-<Statistic.Group horizontal>
+<Statistic.Group horizontal style={{color:'white'}}>
   
     <Statistic>
-      <Statistic.Value>427</Statistic.Value>
-      <Statistic.Label>home craft beers</Statistic.Label>
+      <Statistic.Value style={{color:'white'}}>427</Statistic.Value>
+      <Statistic.Label >home craft beers</Statistic.Label>
     </Statistic>
     <Statistic>
-      <Statistic.Value>3,322</Statistic.Value>
-      <Statistic.Label>wings eaten</Statistic.Label>
+      <Statistic.Value style={{color:'white'}}>3,322</Statistic.Value>
+      <Statistic.Label >wings eaten</Statistic.Label>
     </Statistic>
     <Statistic>
-      <Statistic.Value>22</Statistic.Value>
+      <Statistic.Value style={{color:'white'}}>22</Statistic.Value>
       <Statistic.Label>Tasks</Statistic.Label>
     </Statistic>
   </Statistic.Group> 
