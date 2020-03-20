@@ -17,13 +17,13 @@ class Main extends Component {
 
   renderMain() {
     if (this.state.activeItem === "Home") {
-      return <Welcome id="mainBanner"/>
+      return <Welcome/>
     }
     else if (this.state.activeItem === "Menu") {
       return <Welcome />
     }
     else if (this.state.activeItem === "Visit") {
-      return <Visit id="mainBanner"/>
+      return <Visit />
     }
 
     else if (this.state.activeItem === "Social") {
@@ -44,29 +44,10 @@ class Main extends Component {
 {/* 
          ========================= TOP ================================ */}
 
-        <Grid.Row style={{ backgroundColor:'saddlebrown', height: '20%' }} >
+        <Grid.Row style={{ height: '20%' }} id="wood" >
         <Grid.Column style={{ margin: 'auto' }}>
-          </Grid.Column>
-          <Grid.Column style={{ margin: 'auto'}}>
-            <Top/>
-          </Grid.Column>
-          <Grid.Column style={{ margin: 'auto'}}>
-          
-          </Grid.Column>
-        </Grid.Row>
-{/* 
-         ========================= MIDDLE BANNER ================================ */}
-
-        <Grid.Row style={{ height: '50vh' }} id="banner">
-
-        </Grid.Row>
-
-{/* 
-         ========================= MENU ================================ */}
-
-  <Grid.Row id="middle"  style={{margin:'auto',backgroundColor:'wheat',color:'white', height: '20%' }}>
-          <Grid.Column style={{ margin: 'auto', width: '20vw' }}>
-            <Menu pointing secondary vertical size='massive' >
+        <Grid.Column style={{ margin: 'auto', width: '20vw', color:'white' }}>
+            <Menu  inverted pointing secondary vertical size='massive' >
               <Menu.Item
 
                 name='Home'
@@ -92,6 +73,26 @@ class Main extends Component {
 
             </Menu>
           </Grid.Column>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto'}}>
+            <Top/>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 'auto'}}>
+          
+          </Grid.Column>
+        </Grid.Row>
+{/* 
+         ========================= MIDDLE BANNER ================================ */}
+
+        <Grid.Row style={{ height: '50vh' }} id="banner">
+
+        </Grid.Row>
+
+{/* 
+         ========================= MENU ================================ */}
+
+  <Grid.Row id="mainSection"  style={{margin:'auto',color:'white', height: '20%' }}>
+  
           <Grid.Column id="mainBanner">
             <Container textAlign='center'>
             {this.renderMain()}
