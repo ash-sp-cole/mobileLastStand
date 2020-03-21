@@ -31,8 +31,7 @@ Image{
 
 #mainBanner{
   width: 100vw;
-  height: 50vh;
-  padding: 2%;
+  padding: 10px;
   margin: auto;
   text-align: right;
 }
@@ -44,7 +43,7 @@ body{
  #wood {
 
   
-  background: url(./wood2.jpg) no-repeat center center fixed; 
+  background: url(./woodPlank.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

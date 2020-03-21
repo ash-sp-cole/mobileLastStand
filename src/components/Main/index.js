@@ -76,6 +76,7 @@ class Main extends Component {
           </Grid.Column>
           <Grid.Column style={{ margin: 'auto'}}>
             <Top/>
+            
           </Grid.Column>
           <Grid.Column style={{ margin: 'auto'}}>
           
@@ -85,20 +86,33 @@ class Main extends Component {
          ========================= MIDDLE BANNER ================================ */}
 
         <Grid.Row style={{ height: '50vh' }} id="banner">
+<Grid.Column>
 
+</Grid.Column>
+<Grid.Column>
+  
+</Grid.Column>
+<Grid.Column >
+  
+</Grid.Column>
         </Grid.Row>
 
 {/* 
          =========================  DISPLAY SECTION MAIN ================================ */}
 
-  <Grid.Row id="mainSection"  style={{margin:'auto',color:'white', height: '20%' }}>
+  <Grid.Row id="wood"  style={{margin:'auto',color:'white' }}>
+  <Grid.Column >
   
-          <Grid.Column style={{margin:'auto'}} id="mainBanner">
-            <Container textAlign='center'>
+</Grid.Column>
+          <Grid.Column style={{margin:'auto'}} id="mainBanner" >
+            
+            <Container textAlign='center' style={{minHeight:'500px'}}>
             {this.renderMain()}
             </Container>
           </Grid.Column>
-
+          <Grid.Column style={{width:'20%'}}>
+  
+  </Grid.Column>
         </Grid.Row> 
 
 {/* 
@@ -114,7 +128,7 @@ class Main extends Component {
          ========================= FOOTER ================================ */}
 
 
-      <Grid.Row style={{ height: '20%' }} >
+      <Grid.Row style={{ height: '20%' }} id="wood" >
         <Grid.Column style={{ margin: 'auto' }}>
           </Grid.Column>
           <Grid.Column style={{ margin: 'auto'}}>
