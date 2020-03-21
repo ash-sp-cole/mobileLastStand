@@ -5,7 +5,7 @@ import logo from "../Home/logo.png";
 import SearchBar from '../SearchBar/';
 import menu1 from './menu1.jpg';
 import menu2 from './menu2.jpg';
-
+import HorizontalSidebar from '../sideBar';
 class Welcome extends Component {
 
 
@@ -57,7 +57,7 @@ render(){
        
       </Grid.Column>
     <GridColumn>
-  
+    <HorizontalSidebar/>
     </GridColumn>
     
     </Grid.Row>

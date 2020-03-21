@@ -46,7 +46,7 @@ class Main extends Component {
 
         <Grid.Row style={{ height: '20%' }} id="wood" >
         <Grid.Column style={{ margin: 'auto' }}>
-        <Grid.Column style={{ margin: 'auto', width: '20vw', color:'white' }}>
+        <Grid.Column style={{ margin: 'auto', color:'white' }}>
             <Menu  inverted pointing secondary vertical size='massive' >
               <Menu.Item
 
@@ -89,11 +89,11 @@ class Main extends Component {
         </Grid.Row>
 
 {/* 
-         ========================= MENU ================================ */}
+         =========================  DISPLAY SECTION MAIN ================================ */}
 
   <Grid.Row id="mainSection"  style={{margin:'auto',color:'white', height: '20%' }}>
   
-          <Grid.Column id="mainBanner">
+          <Grid.Column style={{margin:'auto'}} id="mainBanner">
             <Container textAlign='center'>
             {this.renderMain()}
             </Container>
