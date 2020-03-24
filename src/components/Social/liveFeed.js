@@ -104,3 +104,12 @@ const LiveFeed = () => (
 )
 
 export default LiveFeed;
+
+
+
+index.html 
+Portfolio -- portofolio.html
+About --- about.html
+Contact --- contact.html
+Css  --- Assets -- images
+    --- style.css
