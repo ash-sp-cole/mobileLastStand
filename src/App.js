@@ -5,8 +5,6 @@ import Main from './components/Main';
 import "./style.css";
 const App = () => {
   
-  
-  
   return (
    <div>
    
