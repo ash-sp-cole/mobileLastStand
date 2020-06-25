@@ -4,7 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Main from './components/Main';
 import "./style.css";
 const App = () => {
-  
   return (
    <div>
    
