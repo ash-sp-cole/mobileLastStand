@@ -8,11 +8,10 @@ const App = () => {
    <div>
    
      <BrowserRouter>
-     
+   
      <div>
      <Route path="/" exact component={Main}/>
  
-   
      </div>
      </BrowserRouter>
    </div>
